@@ -1,0 +1,34 @@
+{
+  "id": "open-teaching-datasets-template-001",
+  "title": "Teaching-dataset template + canonical metadata/datasheet model",
+  "project": "open-teaching-datasets",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer", "open-science", "data-education", "bioinformatics"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Cancer-data education is gatekept by data access: realistic datasets are controlled-access (dbGaP/EGA/biobanks, needing IRB/DAC approval), while freely-downloadable ones are non-oncology toy tables or large archives with murky licenses and de-identification status. This project produces small, well-documented, openly-licensed teaching datasets that are synthetic-by-default (and, when derived, only from open-access already-de-identified/aggregate sources). Before producing any dataset, the project needs one reusable template and a canonical metadata model that all outputs (datasheet, data dictionary, Croissant metadata, exercises) are projections of. Binding cancer guardrails apply: open-access/aggregate/de-identified/synthetic only; no controlled-access or identifiable patient data; education-only; not medical advice; provenance on every assertion.",
+  "objective": "Create the reusable teaching-dataset template and the canonical metadata/datasheet model that every per-dataset task will use, including the mandatory non-removable safety notice and the synthetic-generation provenance fields.",
+  "acceptanceCriteria": [
+    "Canonical metadata model documents all fields: id, title, learningObjectives[], audience, difficulty, prerequisites[], mode{synthetic|derived}, source{name,url,license{id,url,permitsReuse,permitsDerivatives,shareAlike,snapshotRef},accessTier,deIdStatus,controlledAccessLineage:false}, generation{seed,model,params[]{name,value,provenance{citation,url}}} or derivation{steps[],aggregationLevel,kAnonymityMin}, safety{realPatients:false,notMedicalAdvice:true,notForClinicalUse:true}, fields[]{name,type,units,allowedValues,nullable,description,caveats}, knownLimitations[], biases[], exercises[]{prompt,solutionRef,difficulty}, formats[], specVersions{croissant}, version, doi, completenessScore{before,after}, reproducibilityCheck.",
+    "Markdown template covers the Datasheets-for-Datasets questionnaire, data dictionary, provenance record, license record, known limitations & biases, and the teaching layer (objectives, exercises, solutions, notebook).",
+    "A fixed, non-removable safety notice is specified for every artifact: 'Synthetic (or derived from open aggregate data) — not real patients, not medical advice, not for clinical use — education only.'",
+    "Template states the deliverable is a teaching dataset for data-skills education (not medical content), and records the output-license rules: CC0-1.0 for purely-synthetic data+docs, CC-BY-4.0 when calibrated from/derived from CC-BY (attribution propagated), MIT for code, never more permissive than the source allows.",
+    "At least one filled-in worked example skeleton is included; pnpm build && pnpm test && pnpm lint pass for any committed tooling; commit is DCO signed-off."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-teaching-datasets\\PLAN.md",
+    "C:\\code\\elyos\\planning\\ROADMAP.md",
+    "C:\\code\\elyos\\docs\\good-deed-definition.md",
+    "Datasheets for Datasets (Gebru et al.)",
+    "Croissant ML metadata specification (MLCommons v1.0)"
+  ],
+  "output": "A teaching-dataset documentation template plus a canonical metadata/datasheet model definition (with the mandatory safety notice and synthetic-provenance fields), committed to the project repo and ready for reuse by every per-dataset task.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
