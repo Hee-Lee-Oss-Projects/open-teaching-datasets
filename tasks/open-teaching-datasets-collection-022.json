@@ -1,0 +1,35 @@
+{
+  "id": "open-teaching-datasets-collection-022",
+  "title": "Published teaching collection / course pack + unifying guide",
+  "project": "open-teaching-datasets",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["cancer", "open-science", "data-education", "bioinformatics"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "By M3 the project will have shipped >= 6 datasets across >= 3 skill areas. Without a unifying collection guide, educators must discover and assemble these individually. A published teaching collection / course pack bundles the datasets with a unifying guide: a curriculum map (which dataset teaches which skill, at what difficulty), suggested learning progressions (e.g. beginner → intermediate), instructor notes for multi-dataset courses, and a single landing document that an educator can cite and adopt as a course pack. Depends on ds-expr-013, ds-clean-015, and ds-incidence-017 being shipped.",
+  "objective": "Write and publish a unifying teaching collection guide that presents the shipped datasets as a coherent course pack with a curriculum map, learning progressions, and instructor notes for adopting multiple datasets.",
+  "acceptanceCriteria": [
+    "Curriculum map covers all shipped datasets: dataset name, teaching skill, difficulty level, prerequisites, and suggested use (standalone lesson or progression).",
+    "At least 2 suggested learning progressions (e.g. 'beginner cancer data science track', 'bioinformatics methods track') that sequence datasets across skill areas.",
+    "Instructor notes section: how to integrate multiple datasets into a course, timing estimates, platform requirements, and common student misconceptions.",
+    "A single citable landing document (Zenodo DOI or equivalent) that an educator can reference as 'the open-teaching-datasets course pack'.",
+    "Safety notice present; all dataset attributions and licenses recorded; collection guide license CC-BY-4.0.",
+    "Educator reviewer confirms the collection guide is pedagogically coherent and adoption-ready; document committed; commit DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md (§Roadmap M3 — teaching collection / course pack)",
+    "open-teaching-datasets-ds-expr-013",
+    "open-teaching-datasets-ds-clean-015",
+    "open-teaching-datasets-ds-incidence-017",
+    "open-teaching-datasets-pilot-008"
+  ],
+  "output": "A published teaching collection guide / course pack document (Markdown + Zenodo DOI) presenting all shipped datasets as a coherent, educator-adoptable curriculum.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

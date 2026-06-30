@@ -1,0 +1,35 @@
+{
+  "id": "open-teaching-datasets-ds-incidence-017",
+  "title": "Aggregate cancer-incidence teaching dataset (derived, k>=5)",
+  "project": "open-teaching-datasets",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer", "open-science", "data-education", "bioinformatics", "epidemiology"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Epidemiology and incidence analysis are important cancer data skills, but published aggregate incidence data (SEER/GLOBOCAN-style tables) are already public and open-access, making them viable for a derived teaching dataset. This is the first 'derived-from-open' epidemiology task: it takes published aggregate incidence tables (not individual records), applies the k>=5 cell-size check, and produces a teaching-scale table paired with exercises on interpreting incidence rates, age-standardization, and cross-tabulations. Risk tier is medium because this involves license verification (attribution propagation) and de-identification judgment (k>=5 check) on derived data from real public sources. Depends on catalog-010 (approved source) and snapshot-011 (license snapshot).",
+  "objective": "Produce an aggregate cancer-incidence teaching dataset derived from published open-access aggregate incidence tables (SEER/GLOBOCAN-style), with k>=5 respected on all cells, full gate artifact, attribution, and Zenodo DOI.",
+  "acceptanceCriteria": [
+    "Source is published aggregate incidence (SEER/GLOBOCAN-style), open-access, no controlled-access lineage; gate-002 PASS with license id+URL+snapshot committed.",
+    "Published at the source's aggregation level or coarser; every cross-tab cell >= 5 (k>=5 recorded in the gate artifact); no re-identification path; domain reviewer confirms de-id adequacy.",
+    "outputLicense propagated/compatible with source (CC-BY-4.0 or public-domain as applicable); attribution string recorded; riskTier:medium.",
+    "Data dictionary + Datasheet-for-Datasets + Croissant metadata valid + >= 1 exercise; completeness >= 90/100; Zenodo DOI minted.",
+    "Safety reviewer and domain reviewer sign-off on gate artifact and de-id adequacy."
+  ],
+  "resources": [
+    "PLAN.md (§Data, licensing & compliance — Derived mode; §Solution — Dataset-inspection access protocol)",
+    "open-teaching-datasets-catalog-010",
+    "open-teaching-datasets-snapshot-011",
+    "open-teaching-datasets-gate-002",
+    "SEER/NCI aggregate incidence tables (https://seer.cancer.gov/statistics/)",
+    "GLOBOCAN/IARC (https://gco.iarc.fr/)"
+  ],
+  "output": "An aggregate cancer-incidence teaching dataset (CSV/TSV) derived from open-access aggregate tables, with gate PASS artifact, k>=5 compliance record, attribution, Croissant metadata, data dictionary, Zenodo DOI, and >= 1 teaching exercise.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

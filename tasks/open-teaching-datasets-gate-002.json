@@ -1,0 +1,35 @@
+{
+  "id": "open-teaching-datasets-gate-002",
+  "title": "Source-eligibility + de-identification + license + safety gate checklist",
+  "project": "open-teaching-datasets",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer", "open-science", "data-education", "bioinformatics"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Before any source can be used to generate or derive a teaching dataset, the project needs a binding, non-skippable gate that encodes the cancer-domain guardrails: synthetic-default, no controlled-access data, no identifiable patient data, verified open license, and mandatory safety notice. Without a structured checklist, individual reviewers may apply inconsistent standards, creating re-identification or license-violation risk. The gate must produce a committed PASS/FLAG/EXCLUDE artifact per dataset so every decision is auditable. Risk tier is medium because this document involves license and de-identification judgement criteria that gate all subsequent work.",
+  "objective": "Produce the source-eligibility, de-identification, license-verification, and safety gate checklist that must be passed (producing a committed PASS/FLAG/EXCLUDE artifact) before any source is used in a teaching-dataset task.",
+  "acceptanceCriteria": [
+    "Encodes the cancer eligibility gate first: synthetic-default; derived only if open-access AND de-identified/aggregate AND no controlled-access lineage; explicit EXCLUDE of dbGaP, EGA, individual-level biobanks, and identifiable patient data.",
+    "Objective license criterion: PASS only if license.permitsReuse:true (and permitsDerivatives:true for derived) recorded from a cited clause/URL; missing/unparseable = FLAG/EXCLUDE (no default-allow). Defers NC/share-alike to policy-003.",
+    "Requires recording license id + URL + snapshot (committed copy + SHA-256 + Wayback URL).",
+    "De-id methodology for derived mode: direct-identifier heuristics, quasi-identifier k >= 5, geo-precision threshold, linkage risk; never finer than source; halt-on-signal.",
+    "Requires the safety notice present + accurate, and confirms no medical-advice/clinical content.",
+    "Produces a committed, reviewable PASS/FLAG/EXCLUDE artifact per dataset recording which checks ran and what fired.",
+    "Document committed to the project repo; commit DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md (§Data, licensing & compliance; §Quality, review & risk gates)",
+    "open-teaching-datasets-template-001 (canonical metadata model safety block)",
+    "SPDX license list",
+    "Datasheets for Datasets (Gebru et al.)"
+  ],
+  "output": "A source-eligibility + de-id + license + safety gate checklist document (Markdown), plus a template PASS/FLAG/EXCLUDE artifact, committed to the project repo and ready for use as the blocking gate on every subsequent dataset task.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

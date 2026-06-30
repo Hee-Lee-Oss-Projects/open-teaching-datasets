@@ -1,0 +1,32 @@
+{
+  "id": "open-teaching-datasets-autograde-012",
+  "title": "Exercise/solution framework + autograding scaffolding",
+  "project": "open-teaching-datasets",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer", "open-science", "data-education", "bioinformatics"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Each teaching dataset ships with exercises + worked solutions, but without a structured framework and autograder, there is no CI check that solutions are correct and exercises are well-formed. This task creates the exercise schema (integrated with the canonical metadata model's exercises[] block from template-001) and an autograding scaffold that can be run in CI: a reference solution scores full marks, a known-wrong answer does not, and both are deterministic. This makes 'the teaching layer is correct' a checkable assertion rather than a manual review concern. Depends on template-001 (exercise schema integration) and tooling-006 (CI harness).",
+  "objective": "Implement and merge an exercise/solution framework with autograding scaffolding that integrates with the canonical metadata model and runs deterministically in CI, validating that reference solutions score full marks and wrong answers do not.",
+  "acceptanceCriteria": [
+    "Exercise schema (prompt, difficulty, solutionRef, expectedOutput or evaluation function) integrated with the canonical metadata model's exercises[] block from template-001.",
+    "Autograder runs in CI: a committed reference solution scores full marks and a known-wrong answer does not; fully deterministic.",
+    "Framework supports at least one exercise type relevant to the pilot dataset (e.g. code-output comparison for survival analysis).",
+    "Code MIT licensed; pnpm build && pnpm test && pnpm lint pass; no credentials committed; commit DCO signed-off.",
+    "Educator reviewer has confirmed the framework is usable for the teaching-layer tasks (ds-expr-lesson-014 and future lessons)."
+  ],
+  "resources": [
+    "PLAN.md (§Scope — Light tooling; §Quality — Test fixtures & golden files)",
+    "open-teaching-datasets-template-001 (exercises[] schema)",
+    "open-teaching-datasets-tooling-006"
+  ],
+  "output": "A merged PR adding the exercise/solution framework and autograding scaffolding, with CI demonstrating reference solution = full marks and wrong answer = fail.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

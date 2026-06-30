@@ -1,0 +1,32 @@
+{
+  "id": "open-teaching-datasets-i18n-024",
+  "title": "Translate a datasheet + exercises (domain-reviewed)",
+  "project": "open-teaching-datasets",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["cancer", "open-science", "data-education"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The dataset library currently targets English-language learners. Translating a datasheet and exercise set widens reuse to non-English-speaking learners and educators — an important equity dimension given that cancer data-skills education is a global need. Risk tier is medium because medical/scientific terminology translation requires domain review (a translated datasheet with mistranslated clinical terms could mislead learners). The target language must be chosen based on partner demand; the translation requires both a language reviewer and a domain reviewer. The safety notice must be present and accurate in the translated language.",
+  "objective": "Produce a domain-reviewed translation of one dataset's datasheet + exercise set into a target language agreed with an adoption partner or high-demand community, with safety notice present and accurate in the target language.",
+  "acceptanceCriteria": [
+    "Target language selected based on confirmed partner demand or documented community request; language recorded in the task update.",
+    "Full datasheet and at least one exercise set translated for a shipped dataset (e.g. pilot-008 or ds-expr-013).",
+    "Safety notice present and accurate in the target language: 'Synthetic (or derived from open aggregate data) — not real patients, not medical advice, not for clinical use — education only.' translated and domain-reviewed.",
+    "Translation reviewed by: (1) a native-speaker language reviewer for fluency/accuracy, and (2) a domain reviewer (bilingual oncologist or bioinformatician) confirming clinical/scientific terminology is correct.",
+    "Translation committed to the project repo alongside the source dataset; outputLicense: CC-BY-4.0 (attribution of original + translation); commit DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md (§Problem & beneficiaries — global learners; §Backlog i18n-024 note)",
+    "open-teaching-datasets-pilot-008 (or another shipped dataset as source)",
+    "open-teaching-datasets-template-001 (safety notice text to translate)"
+  ],
+  "output": "A domain-reviewed translated datasheet + exercise set in the target language, committed to the project repo with the source dataset, widening reuse to non-English-speaking learners.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

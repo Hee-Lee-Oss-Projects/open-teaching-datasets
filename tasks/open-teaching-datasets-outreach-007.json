@@ -1,0 +1,34 @@
+{
+  "id": "open-teaching-datasets-outreach-007",
+  "title": "Adoption-channel outreach + candidate partner shortlist",
+  "project": "open-teaching-datasets",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer", "open-science", "data-education"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The project's 'delivered, not merged' bar requires datasets to be adopted into real teaching before they count as shipped outcomes. No adoption partner has been secured yet (verifiedNeed:false on all tasks). To de-risk this, M0 includes explicit outreach to candidate adoption channels: Data Carpentry / The Carpentries, Bioconductor / Galaxy Training Network, university bioinformatics or biostatistics courses, cancer-data MOOCs, and patient-advocate research-literacy programs. Opening at least one outreach thread in M0 is an M0 exit criterion. This is a research/coordination task: identify, prioritize, and contact candidate channels.",
+  "objective": "Open >= 1 adoption-channel outreach thread and produce a committed candidate-partner shortlist ranking realistic adoption channels by fit, audience size, and timeline.",
+  "acceptanceCriteria": [
+    "At least one outreach thread opened with a named candidate adoption channel (e.g. Data Carpentry lesson proposal, Galaxy Training issue, university course contact) by the end of M0.",
+    "A committed shortlist document ranks >= 3 candidate channels by: audience fit (bioinformatics/biostatistics learners), realistic adoption timeline, lesson/dataset format requirements, and contact pathway.",
+    "Each candidate entry includes: channel name, URL, contact method, format requirements for contributed datasets/lessons, and estimated audience size.",
+    "Document distinguishes between self-serve channels (Zenodo + training-repo PR) and partner-confirmed channels requiring an adoption agreement.",
+    "Document committed to the project repo; commit DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md (§Problem & beneficiaries; §Roadmap M0 cold-start de-risking)",
+    "Data Carpentry / The Carpentries (https://carpentries.org)",
+    "Galaxy Training Network (https://training.galaxyproject.org)",
+    "Bioconductor (https://bioconductor.org)",
+    "Zenodo (https://zenodo.org)"
+  ],
+  "output": "A committed adoption-channel outreach document with a ranked candidate-partner shortlist and at least one opened outreach thread, providing the steward a concrete starting point for securing adoption partners.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

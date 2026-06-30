@@ -1,0 +1,35 @@
+{
+  "id": "open-teaching-datasets-ds-derived-019",
+  "title": "First derived-from-open dataset (open de-identified subset)",
+  "project": "open-teaching-datasets",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer", "open-science", "data-education", "bioinformatics"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "The M2 goal includes shipping the first gated derived-from-open dataset: a small subset or aggregation of data that is already open-access AND already de-identified or aggregate, used under the dataset-inspection access protocol (bounded sample, no full extract, no real rows committed). This is the most complex and highest-risk dataset task in the project (though still riskTier:medium, not high) because it involves a real source with re-identification triage. The specific source is selected from catalog-010 (APPROVED entry); must have a confirmed adoption partner (partner-016) to justify the additional complexity. Domain reviewer + Safety reviewer sign-off required.",
+  "objective": "Produce the first derived-from-open teaching dataset: a bounded, aggregated/de-identified subset of an open-access, already-de-identified cancer data source, passing the full eligibility gate with domain and safety reviewer sign-off.",
+  "acceptanceCriteria": [
+    "Source verified open-access + already de-identified/aggregate via the inspection access protocol (bounded sample <= 1,000 rows or <= 5 MB; no full extract; no real rows committed to the repo).",
+    "gate-002 PASS artifact committed; riskTier:medium; k>=5 where aggregated; no direct identifiers; no sub-k cells; linkage risk assessed.",
+    "Domain reviewer (oncologist/bioinformatician) + Safety reviewer sign-off on de-id adequacy.",
+    "License propagated from source; provenance (source URL, version, retrieval date, derivation steps) recorded; safety notice present; reproducible re-derivation documented.",
+    "Completeness >= 90/100; Croissant metadata valid; Zenodo DOI minted; at least 1 exercise with worked solution.",
+    "License snapshot (committed copy + SHA-256 + Wayback URL) for the source license committed via snapshot-011."
+  ],
+  "resources": [
+    "PLAN.md (§Solution — Dataset-inspection access protocol; §Data, licensing & compliance — Derived mode)",
+    "open-teaching-datasets-catalog-010 (APPROVED derived source)",
+    "open-teaching-datasets-snapshot-011",
+    "open-teaching-datasets-partner-016 (confirmed partner needed before this task)",
+    "open-teaching-datasets-gate-002"
+  ],
+  "output": "The first derived-from-open teaching dataset: a bounded, aggregated/de-identified CSV/TSV subset of an open-access source + derivation provenance + gate PASS artifact + domain/safety sign-off + Croissant metadata + Zenodo DOI.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

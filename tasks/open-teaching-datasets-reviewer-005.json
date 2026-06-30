@@ -1,0 +1,31 @@
+{
+  "id": "open-teaching-datasets-reviewer-005",
+  "title": "Name/secure the Safety/eligibility reviewer (blocking gate role)",
+  "project": "open-teaching-datasets",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer", "open-science", "data-education"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The safety/eligibility reviewer is the non-skippable gatekeeper for the cancer-domain guardrails: confirming open-access/de-identified/aggregate/synthetic-only status, verifying licenses permit reuse, and ensuring the mandatory safety notice is present and accurate on every artifact. Per PLAN.md, this role must be filled before the M0 pilot is reviewed; until named, all tasks remain verifiedNeed:false and no dataset ships. At least one named reviewer must always exist or all dataset work halts. This task involves identifying, approaching, and securing commitment from a qualified individual.",
+  "objective": "Identify and secure a named Safety/eligibility reviewer willing to serve as the non-skippable gatekeeper for the cancer-domain eligibility and safety gate on all dataset releases.",
+  "acceptanceCriteria": [
+    "A named individual or rotation of >= 2 qualified reviewers has agreed to fill the safety/eligibility reviewer role.",
+    "Reviewer qualifications documented: familiarity with cancer data access policies (dbGaP/EGA/open-access tiers), open-data licensing, and de-identification principles.",
+    "Commitment confirmed in writing (email, GitHub issue comment, or equivalent); referenced in the project PLAN.md or a committed governance document.",
+    "Reviewer understands and accepts the blocking nature of the role: no dataset ships without their PASS artifact.",
+    "Document committing the reviewer's name/handle and confirmation committed to the project repo; commit DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md (§Governance, roles & stakeholders — Safety/eligibility reviewer)",
+    "open-teaching-datasets-gate-002 (defines the reviewer's responsibilities)"
+  ],
+  "output": "A committed document recording the named Safety/eligibility reviewer(s), their qualifications, and their written confirmation of the role, unblocking the M0 pilot review.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

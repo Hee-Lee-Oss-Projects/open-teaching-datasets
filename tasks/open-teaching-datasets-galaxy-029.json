@@ -1,0 +1,35 @@
+{
+  "id": "open-teaching-datasets-galaxy-029",
+  "title": "Galaxy / Bioconductor training integration",
+  "project": "open-teaching-datasets",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["cancer", "open-science", "data-education", "bioinformatics"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Galaxy Training Network and Bioconductor are major open training platforms for bioinformatics learners. Packaging the project's datasets as training materials for these platforms (Galaxy training material format, Bioconductor ExperimentHub or workflow submission) significantly widens adoption reach beyond GitHub/Zenodo. This is a backlog task contingent on having shipped datasets and adoption interest from these channels (outreach-007 should have opened threads). The integration code/tooling is MIT licensed; any dataset packaged must have already passed gate-002 and have a Zenodo DOI.",
+  "objective": "Package >= 1 shipped dataset as training material for Galaxy Training Network or Bioconductor, enabling adoption via these high-reach training platforms.",
+  "acceptanceCriteria": [
+    "Target platform confirmed (Galaxy Training Network or Bioconductor ExperimentHub) based on outreach-007 threads and partner interest.",
+    "At least 1 shipped dataset packaged in the platform's required format (e.g. Galaxy training tutorial YAML/markdown + workflow, or Bioconductor ExperimentHub submission).",
+    "Dataset already has gate-002 PASS artifact and Zenodo DOI before packaging; platform submission does not alter the gate status.",
+    "Safety notice present in the platform-formatted training material (first cell/step).",
+    "Submission made to the target platform (PR to GTN repo or Bioconductor ExperimentHub); link to the open submission recorded in the project repo.",
+    "pnpm build && pnpm test && pnpm lint pass for any tooling/scripting added; MIT licensed; no credentials committed; commit DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md (§Dependencies & integrations — adoption channels)",
+    "open-teaching-datasets-outreach-007",
+    "Galaxy Training Network (https://training.galaxyproject.org/)",
+    "Bioconductor ExperimentHub (https://bioconductor.org/packages/ExperimentHub/)",
+    "open-teaching-datasets-pilot-008 or open-teaching-datasets-ds-expr-013 (candidate datasets)"
+  ],
+  "output": "A merged PR adding platform packaging tooling/scripts + an open submission to Galaxy Training Network or Bioconductor for at least 1 shipped dataset, expanding adoption reach.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

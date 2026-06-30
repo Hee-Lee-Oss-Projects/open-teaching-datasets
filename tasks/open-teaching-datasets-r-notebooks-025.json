@@ -1,0 +1,36 @@
+{
+  "id": "open-teaching-datasets-r-notebooks-025",
+  "title": "Parallel R notebooks for shipped datasets",
+  "project": "open-teaching-datasets",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["cancer", "open-science", "data-education", "bioinformatics"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The primary notebook format is Python (Jupyter), but biostatistics audiences (especially those learning survival analysis, Cox models, and epidemiology) commonly use R (survival, tidyverse, limma, DESeq2). If a confirmed adoption partner has an R-using audience, parallel R Markdown notebooks for shipped datasets significantly widen adoption. The backlog note specifies 'if partner audience uses R (biostatistics)' — this task is contingent on partner confirmation. Each R notebook must include the safety notice in the first chunk and be tested to run without errors. MIT licensed.",
+  "objective": "Produce parallel R Markdown notebooks for >= 2 shipped datasets (contingent on partner-confirmed R audience), each including the safety notice and running without errors in a standard R environment.",
+  "acceptanceCriteria": [
+    "Contingency confirmed: an adoption partner with an R-using audience has been identified (partner-016 or subsequent partner).",
+    "R Markdown notebooks produced for >= 2 shipped datasets (priority: pilot-008 survival analysis, ds-expr-013 differential expression — both have strong R ecosystems).",
+    "Each notebook: first chunk contains the mandatory safety notice; runs without errors in a standard R environment (survival, ggplot2, limma or equivalent); exercises equivalent to the Python version.",
+    "Notebooks committed to the project repo alongside the Python versions; MIT licensed.",
+    "Technical reviewer confirms notebooks run correctly; educator reviewer confirms R exercises are equivalent to Python exercises in pedagogical quality.",
+    "pnpm build && pnpm test && pnpm lint pass for any tooling changes; commit DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md (§Scope — notebooks in Python; R where audience benefits; §Open questions — Python vs R)",
+    "open-teaching-datasets-pilot-008",
+    "open-teaching-datasets-ds-expr-013",
+    "open-teaching-datasets-partner-016",
+    "R survival package (https://cran.r-project.org/package=survival)",
+    "R Markdown (https://rmarkdown.rstudio.com/)"
+  ],
+  "output": "A merged PR adding parallel R Markdown notebooks for >= 2 shipped datasets, with safety notices and confirmed to run without errors.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

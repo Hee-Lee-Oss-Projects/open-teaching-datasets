@@ -1,0 +1,35 @@
+{
+  "id": "open-teaching-datasets-img-meta-026",
+  "title": "Imaging/pathology metadata teaching table (openly-licensed images only)",
+  "project": "open-teaching-datasets",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["cancer", "open-science", "data-education", "bioinformatics"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Computational pathology and imaging analysis are growing cancer data-science skills, but real pathology images are almost universally controlled-access or tied to individual patients. This backlog task scopes the safest possible approach: a metadata-only teaching table derived from openly-licensed pathology image collections (e.g. The Cancer Imaging Archive open-access collections, openly-licensed pathology image repositories). The table contains image-level metadata (stain type, tissue type, magnification, image dimensions, quality score) with no patient images included in the dataset artifact — metadata only. Risk tier is medium due to license verification requirements for imaging metadata sources.",
+  "objective": "Produce an imaging/pathology metadata teaching table derived exclusively from openly-licensed pathology image collections, containing image-level metadata only (no patient images), with full gate artifact and Zenodo DOI.",
+  "acceptanceCriteria": [
+    "Source is an openly-licensed pathology image collection (open-access, no controlled-access lineage, no patient-identifiable images); gate-002 PASS artifact committed with license id+URL+snapshot.",
+    "Dataset contains metadata only: image identifiers (from the open collection), stain type, tissue type, magnification, image dimensions, quality metrics; no actual patient images included in the artifact.",
+    "Backlog note enforced: 'Metadata only; images must be openly licensed; no patient images' — explicitly documented in the datasheet.",
+    "Data dictionary covers all metadata columns; known limitations (e.g. images not included, metadata-only scope) documented; safety notice present.",
+    "Completeness >= 90/100; Croissant metadata valid; Zenodo DOI minted; at least 1 exercise (e.g. image metadata analysis, stratification).",
+    "Safety reviewer and domain reviewer sign-off; outputLicense: CC-BY-4.0 (propagated from open image source license); riskTier:medium."
+  ],
+  "resources": [
+    "PLAN.md (§Scope — in scope; §Data — derived mode)",
+    "open-teaching-datasets-catalog-010",
+    "open-teaching-datasets-gate-002",
+    "The Cancer Imaging Archive (TCIA) open-access collections (https://www.cancerimagingarchive.net/)",
+    "open-teaching-datasets-snapshot-011"
+  ],
+  "output": "An imaging/pathology metadata teaching table (CSV/TSV) with provenance, gate PASS artifact, data dictionary, Croissant metadata, Zenodo DOI, and >= 1 teaching exercise — metadata only, no patient images.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

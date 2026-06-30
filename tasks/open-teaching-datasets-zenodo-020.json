@@ -1,0 +1,33 @@
+{
+  "id": "open-teaching-datasets-zenodo-020",
+  "title": "Zenodo packaging + DOI + semantic versioning automation",
+  "project": "open-teaching-datasets",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer", "open-science", "data-education"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Each shipped dataset needs a Zenodo DOI and semantic versioning, but doing this manually per dataset is error-prone and slow. Automating Zenodo packaging (assembling the required files, generating the Zenodo metadata record from the canonical metadata object, and providing clear instructions for the human to submit and get a DOI) reduces per-dataset effort and ensures consistency. Semantic versioning must be enforced (version bumps are required for corrections/regenerations). The Zenodo API token is supplied by the human publisher and must never be committed. Depends on tooling-006 (which provides the validation script and Croissant emitter that produce the inputs to this tool).",
+  "objective": "Implement and merge a Zenodo packaging tool that assembles the required files, generates a Zenodo metadata record from the canonical metadata object, and provides a human-review-and-submit flow (not auto-submit) with semantic versioning enforced.",
+  "acceptanceCriteria": [
+    "Tool assembles a Zenodo upload package from a dataset directory: data file(s), provenance.json, Croissant metadata, datasheet, data dictionary, and gate artifact.",
+    "Generates a Zenodo metadata record (JSON) from the canonical metadata object: title, description, creators, license, keywords, upload_type, related identifiers.",
+    "Enforces semantic versioning: version field in canonical metadata must follow semver; tool warns if a patch without a version bump is attempted.",
+    "Flow is human-review-and-submit only: tool prints the assembled package and metadata for review, provides instructions for submitting via the Zenodo web UI or API using a user-supplied token; never commits or logs a Zenodo token.",
+    "pnpm build && pnpm test && pnpm lint pass; MIT licensed; no credentials committed; commit DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md (§Scope — Packaging; §Security & privacy — Secrets handling)",
+    "open-teaching-datasets-tooling-006",
+    "Zenodo REST API documentation (https://developers.zenodo.org/)",
+    "Semantic Versioning specification (https://semver.org/)"
+  ],
+  "output": "A merged PR adding Zenodo packaging + DOI + semantic versioning automation, reducing per-dataset publishing effort while keeping the human as the final submitter.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

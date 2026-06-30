@@ -1,0 +1,36 @@
+{
+  "id": "open-teaching-datasets-ds-variant-018",
+  "title": "Synthetic variant-annotation teaching table + exercises",
+  "project": "open-teaching-datasets",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer", "open-science", "data-education", "bioinformatics"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Variant annotation is a core bioinformatics skill for cancer genomics, but real somatic variant datasets often require controlled access (dbGaP/EGA) or come from NC-licensed databases like COSMIC/OncoKB. A synthetic variant-annotation table — generated with plausible variant types, gene names from open-access references, predicted functional impacts, and population frequencies from open-tier sources — teaches variant interpretation skills without touching controlled-access or NC data. Risk tier is medium because variant annotation references (e.g. COSMIC gene names, ClinVar) require careful license triage via policy-003. Calibration sources must be from the approved catalog. Depends on catalog-010 and synthesis-004.",
+  "objective": "Produce a synthetic variant-annotation teaching table generated from published aggregate variant characteristics and open-access reference gene sets, with full gate artifact, exercises, and Zenodo DOI.",
+  "acceptanceCriteria": [
+    "Synthetic variant table generated from a seed + parameters provenanced to open-access aggregate variant/gene references; no NC-licensed or controlled-access data used as input (verified via policy-003).",
+    "gate-002 PASS artifact committed; safety notice present; riskTier:medium (due to license judgment on calibration sources).",
+    "Data dictionary covers columns: variant_id, gene, chromosome, position, ref_allele, alt_allele, variant_type, predicted_impact, population_frequency, clinical_significance (synthetic label); known limitations documented.",
+    "Completeness >= 90/100; Croissant metadata valid; Zenodo DOI minted; reproducibility check = PASS.",
+    "At least 2 embedded exercises (e.g. filter by impact, classify variant types) with worked solutions.",
+    "outputLicense: CC0-1.0 (or CC-BY-4.0 if any CC-BY calibration source is used); safety reviewer and domain reviewer sign-off."
+  ],
+  "resources": [
+    "PLAN.md (§Scope — synthetic datasets)",
+    "open-teaching-datasets-catalog-010",
+    "open-teaching-datasets-policy-003 (NC triage for variant databases)",
+    "open-teaching-datasets-synthesis-004",
+    "open-teaching-datasets-tooling-006",
+    "open-teaching-datasets-gate-002"
+  ],
+  "output": "A synthetic variant-annotation teaching table CSV/TSV + provenance.json + gate PASS artifact + Croissant metadata + data dictionary + exercises/solutions + Zenodo DOI.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0"
+}

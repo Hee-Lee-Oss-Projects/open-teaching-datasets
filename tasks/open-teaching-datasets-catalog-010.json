@@ -1,0 +1,37 @@
+{
+  "id": "open-teaching-datasets-catalog-010",
+  "title": "Candidate-source catalog + target learning objectives (license-classified)",
+  "project": "open-teaching-datasets",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer", "open-science", "data-education", "bioinformatics"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "M1 broadens the dataset library beyond the M0 pilot. To do this systematically, the project needs a license-classified candidate-source catalog: a structured enumeration of open-access cancer data sources (aggregate statistics, expression matrices, variant summaries, epidemiology tables) that are eligible (or excluded) for use as calibration inputs or derived sources. Each entry must be dispositioned APPROVED/VERIFY-LATER/EXCLUDED through the gate-002 and policy-003 process, with a paired target learning objective so every approved source maps to a concrete skill it teaches. Risk tier is medium because this involves license and de-identification judgement on real sources. Depends on gate-002 and policy-003.",
+  "objective": "Produce a committed, license-classified candidate-source catalog with >= 8 APPROVED entries, each paired with a target learning objective, and explicit EXCLUDED entries for out-of-scope sources.",
+  "acceptanceCriteria": [
+    "Each candidate input source assigned a disposition: APPROVED (open-access + license verified permitsReuse:true with cited URL + eligibility gate pass), VERIFY-LATER, or EXCLUDED (controlled-access lineage, NC-redistribution per policy-003, or identifiable).",
+    "dbGaP/EGA/biobanks/COSMIC-OncoKB-redistribution explicitly listed as EXCLUDED with reason.",
+    "Each APPROVED entry paired with a target learning objective (what skill it teaches, e.g. 'survival analysis', 'differential expression', 'data cleaning', 'variant annotation', 'epidemiology').",
+    "Output is a committed, license-classified catalog with >= 8 APPROVED candidates, ordered by realistic adoption path; one gate artifact per decision.",
+    "Catalog covers at least 3 distinct skill areas (e.g. survival/epidemiology, differential expression/bioinformatics, clinical data cleaning).",
+    "Document committed to the project repo; commit DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md (§Dependencies & integrations — candidate input sources)",
+    "open-teaching-datasets-gate-002",
+    "open-teaching-datasets-policy-003",
+    "SEER/NCI (https://seer.cancer.gov/data/)",
+    "GLOBOCAN/IARC (https://gco.iarc.fr/)",
+    "GEO/ArrayExpress open-tier expression datasets",
+    "cBioPortal open-access data"
+  ],
+  "output": "A committed license-classified candidate-source catalog document with >= 8 APPROVED entries (each with learning objective and gate artifact), EXCLUDED entries for out-of-scope sources, and a prioritized adoption path, feeding all M1/M2 per-dataset tasks.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

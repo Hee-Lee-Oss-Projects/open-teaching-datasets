@@ -1,0 +1,33 @@
+{
+  "id": "open-teaching-datasets-snapshot-011",
+  "title": "License-text snapshot capture (committed copy + SHA-256 + Wayback)",
+  "project": "open-teaching-datasets",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer", "open-science", "data-education"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The gate-002 eligibility checklist requires that every source license is recorded with a committed license-text snapshot (committed copy + SHA-256 + Wayback save URL) rather than a bare URL that can drift or disappear. The project needs tooling that automates: fetching the license text from a URL, computing its SHA-256, saving it to the repo under a canonical path, and recording the Wayback Machine save URL. This makes the provenance requirement for license snapshots systematically enforceable rather than a manual copy-paste step. Depends on gate-002 (which defines the requirement) and tooling-006 (which provides the validation script foundation).",
+  "objective": "Implement and merge a license-text snapshot capture tool that fetches a license URL, commits a local copy, computes its SHA-256, and records a Wayback Machine save URL, automating the committed-snapshot requirement from gate-002.",
+  "acceptanceCriteria": [
+    "Tool accepts a source license URL and outputs: a committed license-text file under a canonical path (e.g. licenses/<source-slug>/LICENSE.txt), its SHA-256 hash, and a Wayback Machine save URL (https://web.archive.org/save/<url>).",
+    "SHA-256 is computed over the committed file and recorded in a companion .json metadata file alongside the committed license text.",
+    "Tool is idempotent: re-running on an already-captured license URL does not overwrite the committed copy (to preserve the original snapshot), or records a version history.",
+    "Instructions for triggering a Wayback save (or automated via the Wayback Save API) are included and tested.",
+    "pnpm build && pnpm test && pnpm lint pass; no credentials committed; MIT license; commit DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md (§Data, licensing & compliance — Provenance model)",
+    "open-teaching-datasets-gate-002 (defines the snapshot requirement)",
+    "open-teaching-datasets-tooling-006",
+    "Wayback Machine Save API (https://archive.org/help/wayback_api.php)"
+  ],
+  "output": "A merged PR adding the license-text snapshot capture tool to the project repo, with tests demonstrating it fetches, commits, hashes, and records a Wayback URL for a sample license.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}
