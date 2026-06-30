@@ -1,0 +1,34 @@
+{
+  "id": "open-teaching-datasets-pilot-lesson-009",
+  "title": "Pilot teaching layer: exercises + solutions + notebook for the cohort",
+  "project": "open-teaching-datasets",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer", "open-science", "data-education", "bioinformatics"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "A dataset without a teaching layer (exercises, solutions, notebook) is not a complete teaching artifact. The pilot teaching layer pairs with the synthetic survival-analysis cohort from pilot-008 to create a complete lesson: defined learning objectives, graded exercises, worked solutions, and a runnable Jupyter notebook guiding learners through fitting and interpreting a Kaplan-Meier curve and Cox model. The teaching layer must be reviewed by an educator reviewer (pedagogy check) and a technical reviewer (notebook runs, solutions correct). The safety notice must appear in the notebook's first cell.",
+  "objective": "Produce the teaching layer for the M0 pilot cohort: defined learning objectives, >= 1 graded exercise with a worked solution, and a runnable Python notebook, reviewed by an educator and a technical reviewer.",
+  "acceptanceCriteria": [
+    "Learning objectives clearly stated (e.g. 'fit and interpret a Kaplan-Meier curve; fit a Cox proportional-hazards model with a censored outcome; interpret hazard ratios').",
+    "At least one graded exercise with a complete worked solution; exercises use only the synthetic cohort data (no external data required).",
+    "Runnable Python Jupyter notebook: first cell contains the mandatory safety notice; notebook runs top-to-bottom without errors in a standard conda/pip environment; includes instructor notes.",
+    "Educator reviewer has reviewed and confirmed the teaching layer actually teaches the stated skill at the stated level.",
+    "Technical reviewer has confirmed the notebook runs and solutions are correct.",
+    "Document committed to the project repo alongside the pilot-008 dataset; commit DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md (§Scope — Teaching layer per dataset; §Quality)",
+    "open-teaching-datasets-pilot-008 (the cohort data file this lesson uses)",
+    "open-teaching-datasets-template-001 (exercises{} schema and safety notice text)",
+    "open-teaching-datasets-autograde-012 (exercise schema, if completed)"
+  ],
+  "output": "A teaching-layer document set (exercises, solutions, runnable Jupyter notebook, instructor note) committed alongside the pilot-008 cohort dataset, completing the M0 pilot as a full teaching artifact.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0"
+}

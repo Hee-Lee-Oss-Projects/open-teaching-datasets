@@ -1,0 +1,33 @@
+{
+  "id": "open-teaching-datasets-ds-expr-lesson-014",
+  "title": "Differential-expression teaching layer (exercises + notebook)",
+  "project": "open-teaching-datasets",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer", "open-science", "data-education", "bioinformatics"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The synthetic differential-expression matrix from ds-expr-013 needs a complete teaching layer to become a usable lesson. The teaching layer includes: defined learning objectives for differential expression analysis, graded exercises (e.g. run a DE test, interpret volcano plot, multiple testing correction), worked solutions, and a runnable Python notebook. The autograding framework from autograde-012 should be used to structure exercises so they are CI-testable. The safety notice must appear in the notebook's first cell. An educator reviewer confirms pedagogy; a technical reviewer confirms the notebook runs correctly.",
+  "objective": "Produce the teaching layer for the ds-expr-013 synthetic expression matrix: defined learning objectives, graded exercises with worked solutions (using autograde-012 framework), and a runnable Python notebook.",
+  "acceptanceCriteria": [
+    "Learning objectives stated: e.g. 'perform and interpret a differential expression analysis (e.g. DESeq2-equivalent logic or scipy); interpret a volcano plot; apply and explain multiple testing correction (Benjamini-Hochberg)'.",
+    "At least 2 graded exercises with complete worked solutions, structured using the autograde-012 framework so autograder can confirm reference solution scores full marks.",
+    "Runnable Python Jupyter notebook: first cell contains the mandatory safety notice; notebook runs without errors; instructor notes included.",
+    "Educator reviewer confirms the teaching layer teaches the stated DE skill at the stated level.",
+    "Technical reviewer confirms the notebook runs and solutions are correct.",
+    "Document committed to the project repo alongside ds-expr-013; commit DCO signed-off."
+  ],
+  "resources": [
+    "open-teaching-datasets-ds-expr-013 (the expression matrix this lesson uses)",
+    "open-teaching-datasets-autograde-012 (exercise/solution framework)",
+    "open-teaching-datasets-template-001 (teaching layer schema)"
+  ],
+  "output": "A teaching-layer document set (exercises, solutions, runnable Jupyter notebook, instructor note) committed alongside the ds-expr-013 dataset.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0"
+}

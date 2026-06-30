@@ -1,0 +1,32 @@
+{
+  "id": "open-teaching-datasets-partner-016",
+  "title": "Secure first confirmed adoption partner",
+  "project": "open-teaching-datasets",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer", "open-science", "data-education"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "No adoption partner has been secured yet and all tasks carry verifiedNeed:false. The project's 'delivered, not merged' bar requires datasets to be adopted into real teaching before they count as shipped outcomes. Securing a first named partner (an educator, course, or workshop that commits to using a dataset in real teaching) is a key M1 exit criterion and unlocks setting verifiedNeed:true on partner-specific tasks. The outreach-007 task opened threads; this task converts a thread into a confirmed commitment. Depends on outreach-007.",
+  "objective": "Secure a named first adoption partner — an educator or program who confirms they will use at least one project dataset in real teaching — and document the adoption mechanism and commitment.",
+  "acceptanceCriteria": [
+    "A named educator/program confirms in writing they will use a specific dataset in real teaching (course, workshop, or curriculum inclusion).",
+    "Adoption mechanism documented: which dataset, which lesson/course, which platform (lesson repo PR / platform / syllabus inclusion), and expected learner count.",
+    "Tasks for that partner updated to verifiedNeed:true with requestor set to the confirmed partner.",
+    "Steward records the adoption-evidence artifact (outcomes/<dataset-id>.json or equivalent) with the syllabus/workshop URL or written educator confirmation.",
+    "Document committed to the project repo; commit DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md (§Problem & beneficiaries; §Success metrics; §Governance — Steward)",
+    "open-teaching-datasets-outreach-007 (outreach threads opened)",
+    "open-teaching-datasets-pilot-008 (the dataset most likely to attract an early partner)"
+  ],
+  "output": "A committed document recording the first confirmed adoption partner, the adoption mechanism, and a link to the outcomes evidence artifact, unblocking verifiedNeed:true on partner-specific tasks.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

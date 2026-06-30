@@ -1,0 +1,34 @@
+{
+  "id": "open-teaching-datasets-refresh-023",
+  "title": "Maintenance / versioning / errata + regeneration process",
+  "project": "open-teaching-datasets",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["cancer", "open-science", "data-education"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "As the dataset library grows, datasets will need corrections (errata), source-calibration updates, and version bumps. Without a documented maintenance process, corrections are ad-hoc and unreproducible. Synthetic datasets must regenerate deterministically from their committed seed/params (same seed => identical bytes after a fix), so every corrected version is independently verifiable. The maintenance process must define: how errata are issued, how version bumps work (semver), how reproducibility checks are re-run on each release, and what triggers a dataset to become a maintenance task. Stale/incorrect datasets should surface as maintenance tasks in the backlog. Depends on zenodo-020 (versioning automation) and tooling-006 (validation).",
+  "objective": "Document the maintenance, versioning, errata, and regeneration process for the dataset library, ensuring every corrected version is reproducibly regenerated and every release re-passes the reproducibility check.",
+  "acceptanceCriteria": [
+    "Documented process to issue corrected versions: errata file format, version bump requirements (semver patch/minor/major), and communication to adopters.",
+    "Synthetic datasets regenerate deterministically from recorded seed/params: documented how a corrected parameter file leads to an identically-reproducible new version.",
+    "Reproducibility check re-run requirement: every release (including errata) must re-pass the reproducibility check (same seed => identical bytes) before Zenodo DOI update.",
+    "Process for flagging stale/incorrect datasets as maintenance tasks in the project backlog.",
+    "Named steward (or role) responsible for ongoing adoption liaison and dataset maintenance identified.",
+    "Document committed to the project repo; commit DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md (§Sustainability & maintenance)",
+    "open-teaching-datasets-zenodo-020",
+    "open-teaching-datasets-tooling-006",
+    "Semantic Versioning specification (https://semver.org/)"
+  ],
+  "output": "A maintenance/versioning/errata/regeneration process document committed to the project repo, covering errata format, semver bumps, reproducibility re-check, and named steward.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

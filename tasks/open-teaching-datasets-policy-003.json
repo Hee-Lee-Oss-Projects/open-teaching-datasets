@@ -1,0 +1,35 @@
+{
+  "id": "open-teaching-datasets-policy-003",
+  "title": "NC / share-alike acceptance policy (incl. COSMIC/OncoKB) for cancer sources",
+  "project": "open-teaching-datasets",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer", "open-science", "data-education", "bioinformatics"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Cancer-domain data sources frequently carry non-commercial (NC) or share-alike licensing terms, most notably COSMIC and OncoKB. The eligibility gate (gate-002) defers NC/share-alike decisions to a written policy decided before any triage begins. Without a clear written policy, individual reviewers may inconsistently permit or exclude NC sources, creating legal and ethical risk. The default for NC redistribution must be EXCLUDE (NC terms typically forbid open redistribution), but the policy must also address calibration-only use (no redistribution of the NC data itself) and share-alike propagation. Risk tier is medium because this document makes binding legal/license judgements on cancer-specific data resources.",
+  "objective": "Produce the written NC/share-alike acceptance policy for cancer data sources (including COSMIC/OncoKB) that resolves whether and under what conditions NC- or share-alike-licensed sources may be used, and that is ratified before any source triage begins.",
+  "acceptanceCriteria": [
+    "States the default for NC redistribution as EXCLUDE (NC terms typically forbid open redistribution required by a teaching commons).",
+    "Addresses calibration-only use: whether a synthetic dataset calibrated to aggregate statistics from an NC source (but not redistributing any NC data) is permissible, with a written rationale and cited clause.",
+    "States share-alike propagation rule: if a share-alike source is accepted, the output license must propagate the share-alike license and this is recorded in the gate artifact.",
+    "Explicitly names COSMIC and OncoKB as examples and records their current license terms + the policy disposition for each common use case (calibration-only vs. redistribution).",
+    "Cites specific clause/URL for each decision; no assumed permissions; missing/unparseable = EXCLUDE.",
+    "Policy is committed to the project repo and referenced by gate-002 before any source triage; commit DCO signed-off."
+  ],
+  "resources": [
+    "PLAN.md (§Data, licensing & compliance)",
+    "open-teaching-datasets-gate-002",
+    "COSMIC license terms (https://cancer.sanger.ac.uk/cosmic/license)",
+    "OncoKB license terms (https://www.oncokb.org/terms)",
+    "Creative Commons NC license summary"
+  ],
+  "output": "A written NC/share-alike acceptance policy document committed to the project repo, covering COSMIC/OncoKB and general NC/share-alike cases, ready to be referenced by gate-002 before any source triage.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

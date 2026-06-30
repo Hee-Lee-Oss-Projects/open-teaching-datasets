@@ -1,0 +1,35 @@
+{
+  "id": "open-teaching-datasets-staging-027",
+  "title": "Synthetic TNM-staging-logic teaching dataset + exercises",
+  "project": "open-teaching-datasets",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["cancer", "open-science", "data-education", "bioinformatics"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "TNM staging is a foundational concept in oncology data: learners need to understand how T (tumor), N (node), and M (metastasis) values map to stage groups, and how to write code that applies staging logic. A synthetic dataset of TNM values + computed stage groups (generated from a fixed seed, with TNM distributions calibrated to published aggregate stage distributions) teaches this logic-programming skill without any real patient data. The backlog note specifies 'teaches staging rules; synthetic; not clinical guidance'. The safety notice must be prominent: this is a data-skills exercise, not clinical staging guidance.",
+  "objective": "Produce a synthetic TNM-staging-logic teaching dataset with TNM components and derived stage groups, exercises on implementing staging logic, and a clear safety notice that this is not clinical guidance.",
+  "acceptanceCriteria": [
+    "Synthetic tabular dataset of patient_id (synthetic), T_value, N_value, M_value, stage_group generated from a fixed seed + provenanced parameters (TNM distributions from published aggregate statistics).",
+    "gate-002 PASS artifact committed; safety notice present and prominent: 'This dataset is for learning to code staging rules — not clinical guidance, not real patients, not medical advice'; riskTier:low.",
+    "Data dictionary covers all columns; stage_group derivation logic documented; exercises teach learners to implement the TNM->stage mapping in code.",
+    "At least 2 exercises: (1) implement a TNM->stage function from a staging table; (2) validate computed stages against the provided stage_group column.",
+    "Completeness >= 90/100; Croissant metadata valid; Zenodo DOI minted; reproducibility check = PASS; outputLicense: CC0-1.0.",
+    "Technical reviewer and educator reviewer sign-off."
+  ],
+  "resources": [
+    "PLAN.md (§Scope — synthetic datasets; staging-logic tables)",
+    "open-teaching-datasets-synthesis-004",
+    "open-teaching-datasets-tooling-006",
+    "open-teaching-datasets-gate-002",
+    "AJCC Cancer Staging Manual (summary/aggregate stage distributions from published literature)"
+  ],
+  "output": "A synthetic TNM-staging-logic teaching dataset (CSV/TSV) + provenance.json + gate PASS artifact + data dictionary + exercises/solutions + Croissant metadata + Zenodo DOI.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0"
+}

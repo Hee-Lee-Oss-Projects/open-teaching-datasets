@@ -1,0 +1,36 @@
+{
+  "id": "open-teaching-datasets-ds-clean-015",
+  "title": "Synthetic 'messy' clinical data-cleaning dataset + exercises",
+  "project": "open-teaching-datasets",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer", "open-science", "data-education", "bioinformatics"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Data cleaning is a foundational skill for any cancer data analyst: real clinical datasets are notoriously messy (inconsistent codings, missing values, outliers, free-text fields). Teaching this skill requires a realistic 'messy' dataset that learners can clean, but real clinical data is controlled-access. A synthetic 'messy' clinical dataset — deliberately introduced encoding errors, missing value patterns, inconsistent categorical codings, and outlier values calibrated to realistic distributions — teaches this skill safely. The exercises are embedded in the deliverable (unlike the expression task which has a separate lesson task). Depends on catalog-010 (calibration source approved), synthesis-004, and tooling-006.",
+  "objective": "Produce a synthetic 'messy' clinical data-cleaning dataset with deliberately introduced data quality issues, full documentation, gate PASS artifact, Zenodo DOI, and embedded exercises teaching systematic data cleaning.",
+  "acceptanceCriteria": [
+    "Synthetic clinical tabular dataset generated from a seed + provenanced parameters; includes deliberate data quality issues: missing values, inconsistent categorical codings, outlier values, and at least one structural issue (e.g. mixed date formats).",
+    "Data quality issues are documented in the data dictionary with a 'clean version' reference so learners can verify their cleaning result.",
+    "gate-002 PASS artifact committed; safety notice present; riskTier:low; no individual-level data used as input.",
+    "Completeness >= 90/100; Croissant metadata valid; Zenodo DOI minted; reproducibility check = PASS.",
+    "At least 2 embedded exercises (cleaning tasks) with worked solutions, structured using the autograde-012 framework where available.",
+    "outputLicense: CC0-1.0; safety reviewer and technical reviewer sign-off."
+  ],
+  "resources": [
+    "PLAN.md (§Scope — In scope synthetic datasets)",
+    "open-teaching-datasets-catalog-010",
+    "open-teaching-datasets-synthesis-004",
+    "open-teaching-datasets-tooling-006",
+    "open-teaching-datasets-gate-002",
+    "open-teaching-datasets-autograde-012"
+  ],
+  "output": "A synthetic 'messy' clinical data-cleaning dataset CSV/TSV + clean reference CSV + provenance.json + gate PASS artifact + Croissant metadata + data dictionary + embedded exercises/solutions + Zenodo DOI.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0"
+}

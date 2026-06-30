@@ -1,0 +1,34 @@
+{
+  "id": "open-teaching-datasets-registry-028",
+  "title": "Example consent-first registry schema (governance, synthetic only)",
+  "project": "open-teaching-datasets",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["cancer", "open-science", "data-education"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Data governance and consent-first registry design are important skills for cancer data professionals. Teaching these concepts requires a schema/governance example. Per PLAN.md and the binding cancer guardrails, this artifact is explicitly: schema/governance examples only, populated with synthetic or deceased/aggregate data only, consent-first framing, and never a live patient data store. Risk tier is medium because schema design for patient data registries involves legal/ethical framing that requires careful language — any ambiguity that implies real patient data could be stored must be flagged. The backlog note specifies 'Schema/governance example; synthetic/aggregate only; never a live store'.",
+  "objective": "Produce a consent-first registry schema and governance document as a teaching example, explicitly scoped to schema/governance education only — never a live patient data store — with synthetic/aggregate-only sample data.",
+  "acceptanceCriteria": [
+    "Document is explicitly framed as a schema/governance teaching example: 'This is a teaching artifact for understanding registry design — not a live patient data store, not real patient data, not medical advice.'",
+    "Registry schema covers: consent record fields, data subject rights (access, withdrawal), data use limitations, governance roles, audit trail fields, and retention policy example.",
+    "Any sample data included is synthetic or from deceased/aggregate publicly-available sources; no real patient records.",
+    "Explicitly addresses: consent-first design (no data without consent record), data minimization, purpose limitation, and breach notification process as schema-level constraints.",
+    "Safety notice present; riskTier:medium; document does not imply fitness for regulatory compliance without legal review.",
+    "Document committed to the project repo; commit DCO signed-off; outputLicense: CC-BY-4.0."
+  ],
+  "resources": [
+    "PLAN.md (§Scope — Registry-shaped artifacts; §Data — Registry-shaped artifacts)",
+    "open-teaching-datasets-gate-002 (synthetic/aggregate-only constraint)",
+    "GDPR Article 5 (data minimization, purpose limitation) as educational reference",
+    "GA4GH Data Use Ontology (educational reference for consent categories)"
+  ],
+  "output": "A consent-first registry schema + governance document as a teaching example, explicitly framed as schema/governance education only (never a live store), committed to the project repo.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

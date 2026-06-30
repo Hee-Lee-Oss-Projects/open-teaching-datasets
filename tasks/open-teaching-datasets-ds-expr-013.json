@@ -1,0 +1,35 @@
+{
+  "id": "open-teaching-datasets-ds-expr-013",
+  "title": "Synthetic differential-expression matrix (data file)",
+  "project": "open-teaching-datasets",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer", "open-science", "data-education", "bioinformatics"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Differential expression analysis is a core bioinformatics skill for cancer data learners, but realistic expression datasets either require controlled-access (e.g. TCGA via dbGaP) or are large enough to be unusable in a 90-minute lesson. A synthetic gene-expression matrix, generated from published aggregate expression characteristics (e.g. published fold-change distributions and variance parameters from open-tier studies), teaches the skill without touching controlled-access data. The data file is the synthetic artifact; the teaching layer is ds-expr-lesson-014. Depends on catalog-010 (approved source for calibration), synthesis-004 (methodology), and tooling-006 (generator harness).",
+  "objective": "Produce a synthetic differential-expression matrix (genes x samples, two-group design) generated from published aggregate expression characteristics, passing gate-002 with full documentation and a Zenodo DOI.",
+  "acceptanceCriteria": [
+    "Synthetic expression matrix generated from a seed + parameters provenanced to published aggregate expression characteristics; no individual-level data input.",
+    "gate-002 PASS artifact committed; safety notice present and accurate; riskTier:low.",
+    "Data dictionary covers genes x samples structure + group labels; known limitations and biases documented; completeness >= 90/100; Croissant metadata valid; Zenodo DOI minted.",
+    "Reproducibility check = PASS: independent reviewer re-runs seed/params and produces identical file.",
+    "outputLicense: CC0-1.0 (or CC-BY-4.0 if calibrated from a CC-BY source with attribution).",
+    "Safety reviewer sign-off on gate artifact; technical reviewer confirms data dictionary and reproducibility."
+  ],
+  "resources": [
+    "PLAN.md (§Scope — In scope synthetic datasets)",
+    "open-teaching-datasets-catalog-010 (approved expression calibration source)",
+    "open-teaching-datasets-synthesis-004",
+    "open-teaching-datasets-tooling-006",
+    "open-teaching-datasets-gate-002"
+  ],
+  "output": "A synthetic differential-expression matrix CSV/TSV + provenance.json + gate PASS artifact + Croissant metadata + data dictionary + Zenodo DOI, ready for the ds-expr-lesson-014 teaching layer.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0"
+}
