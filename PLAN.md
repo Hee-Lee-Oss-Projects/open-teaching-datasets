@@ -234,7 +234,7 @@ enforceable).** Inspection is the only point we touch a real source, so it is co
   quasi-identifier combination ⇒ halt, discard sample, route to EXCLUDE.
 - **No real rows committed.** Worked examples/exercises use synthetic or trivially-public rows.
 
-**Tech stack.** TypeScript, ESM, pnpm workspaces (Elyos convention) for tooling; data in CSV/TSV/
+**Tech stack.** TypeScript, ESM, pnpm workspaces (Hee-Lee Oss convention) for tooling; data in CSV/TSV/
 Parquet; metadata in JSON/JSON-LD (Croissant ML v1.0, pinned). Notebooks in Jupyter (Python) and
 R Markdown where the audience benefits. No runtime services; everything runs locally or in CI.
 
@@ -446,7 +446,7 @@ its own committed eligibility/gate artifact before work begins.
   COSMIC/OncoKB (NC) for redistribution, and any identifiable patient data.
 - **External services:** Zenodo (DOI + archival); GitHub / training repos (lesson contribution);
   open training platforms (Carpentries, Galaxy Training, Bioconductor) as adoption channels.
-- **Elyos pieces:** Task JSON schema (`packages/schema`); donated-lane CLI workspace/PR flow
+- **Hee-Lee Oss pieces:** Task JSON schema (`packages/schema`); donated-lane CLI workspace/PR flow
   (`packages/cli`); good-deed definition + refusal guardrails. **No funded-lane/runner dependency**
   (donated lane).
 
@@ -475,7 +475,7 @@ its own committed eligibility/gate artifact before work begins.
   data is gated to open-access, already-de-identified/aggregate sources with k ≥ 5 enforced.
 - **Secrets handling:** tooling needs no credentials by default. A Zenodo token (for DOI minting) is
   supplied by the human publishing and **must never** be written into logs, receipts, or committed
-  files (Elyos rule). No API keys for any patient-data source exist because such sources are out of
+  files (Hee-Lee Oss rule). No API keys for any patient-data source exist because such sources are out of
   scope.
 - **Abuse/misuse prevention:** refuse and flag any task that would (a) launder controlled-access or
   identifiable data as "teaching data", (b) push synthetic data toward implied-real clinical use,
@@ -510,11 +510,11 @@ its own committed eligibility/gate artifact before work begins.
 
 ## References
 
-- Elyos work rules — `C:\code\elyos\CLAUDE.md`
-- Good Deed Definition + risk tiers — `C:\code\elyos\docs\good-deed-definition.md`
-- Task JSON schema — `C:\code\elyos\packages\schema\src\schemas.ts`
-- Portfolio roadmap (Track 8 cancer guardrails) — `C:\code\elyos\planning\ROADMAP.md`
-- Sibling plan (documentation/provenance patterns) — `C:\code\elyos\planning\projects\open-data-datasheets\PLAN.md`
+- Hee-Lee Oss work rules — `C:\code\hee-lee-oss\CLAUDE.md`
+- Good Deed Definition + risk tiers — `C:\code\hee-lee-oss\docs\good-deed-definition.md`
+- Task JSON schema — `C:\code\hee-lee-oss\packages\schema\src\schemas.ts`
+- Portfolio roadmap (Track 8 cancer guardrails) — `C:\code\hee-lee-oss\planning\ROADMAP.md`
+- Sibling plan (documentation/provenance patterns) — `C:\code\hee-lee-oss\planning\projects\open-data-datasheets\PLAN.md`
 - Datasheets for Datasets (Gebru et al., 2018/2021)
 - Croissant ML metadata format specification (MLCommons, v1.0)
 - SPDX license list; Creative Commons CC0 / CC-BY 4.0; Open Government Licence
@@ -593,7 +593,7 @@ above (and the companion `TASKS.md`). Each is concrete and reflected in the text
 ## Review sign-off
 
 A completeness + correctness review of this plan and the companion `TASKS.md` was performed against
-the planning spec, the Elyos work rules, the good-deed definition, the Task JSON schema, and the
+the planning spec, the Hee-Lee Oss work rules, the good-deed definition, the Task JSON schema, and the
 binding cancer-domain guardrails. Findings and fixes:
 
 - **All 17 required H2 sections present and in order**, with `## Data, licensing & compliance`

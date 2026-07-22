@@ -21,9 +21,9 @@
     "At least one filled-in worked example skeleton is included; pnpm build && pnpm test && pnpm lint pass for any committed tooling; commit is DCO signed-off."
   ],
   "resources": [
-    "C:\\code\\elyos\\planning\\projects\\open-teaching-datasets\\PLAN.md",
-    "C:\\code\\elyos\\planning\\ROADMAP.md",
-    "C:\\code\\elyos\\docs\\good-deed-definition.md",
+    "C:\\code\\hee-lee-oss\\planning\\projects\\open-teaching-datasets\\PLAN.md",
+    "C:\\code\\hee-lee-oss\\planning\\ROADMAP.md",
+    "C:\\code\\hee-lee-oss\\docs\\good-deed-definition.md",
     "Datasheets for Datasets (Gebru et al.)",
     "Croissant ML metadata specification (MLCommons v1.0)"
   ],

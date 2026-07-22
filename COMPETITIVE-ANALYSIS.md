@@ -1,6 +1,6 @@
 # Competitive & Improvement Analysis — `open-teaching-datasets`
 
-> Scope: rigorous review of the Elyos cancer-research good-deed project that produces small,
+> Scope: rigorous review of the Hee-Lee Oss cancer-research good-deed project that produces small,
 > well-documented, OPEN teaching datasets (de-identified / synthetic) for cancer-data education.
 > Prepared 2026-06-29. Sources cited inline; URLs collected at the end of each section.
 

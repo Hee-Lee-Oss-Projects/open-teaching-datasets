@@ -25,7 +25,7 @@
     "open-teaching-datasets-template-001 (canonical metadata model)",
     "open-teaching-datasets-synthesis-004 (generation methodology spec)",
     "Croissant ML metadata specification (MLCommons v1.0)",
-    "TypeScript, ESM, pnpm workspaces (Elyos convention)"
+    "TypeScript, ESM, pnpm workspaces (Hee-Lee Oss convention)"
   ],
   "output": "A merged PR adding the generator harness, validation script, and Croissant emitter to the project repo, with CI golden fixtures green.",
   "requestor": "TO BE SECURED",
